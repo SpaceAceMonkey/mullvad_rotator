@@ -1,0 +1,11 @@
+[Unit]
+Description=Connect to random Mullvad endpoint
+
+[Service]
+Type=forking
+RemainAfterExit=yes
+ExecStart=/usr/local/bin/mullvad_vpn.sh
+ExecStop=/usr/local/bin/mullvad_vpn.sh -d
+
+[Install]
+WantedBy=multi-user.target
