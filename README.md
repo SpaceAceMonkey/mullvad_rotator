@@ -8,7 +8,7 @@ the Mullvad VPN network.
 
 All steps are for Ubuntu 20.04, and might need adaptation for your system.
 These instructions assume you have a working WireGuard install and Mullvad
-configuration files.
+configuration files. You may also need to `sudo apt-get install resolvconf`.
 
 Copy `mullvad_vpn.sh` to wherever suits you on your machine. If desired,
 you may open `mullvad_vpn.sh` and update `interface_file` and 
